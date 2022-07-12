@@ -41,7 +41,7 @@ int main()
 
     string password;
     string commandUser;
-
+    string nameProg;
 
     do
     {
@@ -119,6 +119,36 @@ int main()
                     const char* charCommand = command.c_str();
                     system(charCommand);
                     system("start http://www.google.com");
+
+                } else if(commandUser == "open som programm pls"){
+                    cout << "Okay sir, give me the name of the programm" << endl;
+                    string phrase = "Okay sir, give me the name of the programm";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char* charCommand = command.c_str();
+                    system(charCommand);
+
+                    getline(cin,nameProg);
+
+                    if(nameProg == "steam"){
+                        cout << "Okay sir, opening of the programm in process" << endl;
+                        string phrase = "Okay sir, opening of the programm in process";
+                        string command = "espeak \"" + phrase + "\"";
+                        const char* charCommand = command.c_str();
+                        system(charCommand);
+                        CreateProcess(TEXT("C:\\Program Files (x86)\\Steam\\steam.exe"),NULL,NULL,NULL,FALSE,NULL,NULL,NULL,&startInfo,&processInfo);
+
+                    }
+
+                }else if(commandUser == "search a certain file"){
+                    cout << "Okay sir, give me the name of the file" << endl;
+                    string phrase = "Okay sir, give me the name of the file";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char* charCommand = command.c_str();
+                    system(charCommand);
+
+                    if(getline(cin,nameProg)!= NULL){
+                        systemt("dir "test1.mp3" /s");
+                    }
 
                 }
                 else if(commandUser == "end of the programm" || commandUser == "bye" || commandUser == "i give you a break"){
