@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1685786442 source:c:\users\daoudou\desktop\training\c++\base\kroscalypsev1.0\main.cpp
+	<iostream>
+	<stdexcept>
+	<fstream>
+	<string.h>
+	<map>
+	<windows.h>
+	<vector>
+	<mmsystem.h>
+	<stdio.h>
+	<strsafe.h>
+	<cstdlib>
+	<ctime>
+
